@@ -1,0 +1,141 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-04-17 18:43:27.207772",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "company",
+  "applicable_on",
+  "column_break_upfz",
+  "apply_on_additional_salary",
+  "section_break_mvgg",
+  "table_tfus",
+  "hour_rate_calculation_parameter_section",
+  "calculation",
+  "fixed_hour_rate",
+  "column_break_mrsx",
+  "month_days",
+  "fixed_days",
+  "additional_factor",
+  "salary_range_section",
+  "from",
+  "column_break_igfd",
+  "to"
+ ],
+ "fields": [
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company"
+  },
+  {
+   "fieldname": "applicable_on",
+   "fieldtype": "Select",
+   "label": "Applicable On"
+  },
+  {
+   "fieldname": "column_break_upfz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "apply_on_additional_salary",
+   "fieldtype": "Check",
+   "label": "Apply on Additional Salary"
+  },
+  {
+   "fieldname": "hour_rate_calculation_parameter_section",
+   "fieldtype": "Section Break",
+   "label": "Hour Rate Calculation Parameter"
+  },
+  {
+   "fieldname": "calculation",
+   "fieldtype": "Select",
+   "label": "Calculation",
+   "options": "Fixed\nFlexible"
+  },
+  {
+   "fieldname": "fixed_hour_rate",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Fixed Hour Rate",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_mrsx",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "month_days",
+   "fieldtype": "Select",
+   "label": "Month Days",
+   "options": "Fixed\nFlexible"
+  },
+  {
+   "fieldname": "fixed_days",
+   "fieldtype": "Int",
+   "label": "Fixed Days"
+  },
+  {
+   "fieldname": "additional_factor",
+   "fieldtype": "Data",
+   "label": "Additional Factor"
+  },
+  {
+   "fieldname": "salary_range_section",
+   "fieldtype": "Section Break",
+   "label": "Salary Range"
+  },
+  {
+   "fieldname": "from",
+   "fieldtype": "Int",
+   "label": "From"
+  },
+  {
+   "fieldname": "column_break_igfd",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "to",
+   "fieldtype": "Int",
+   "label": "To"
+  },
+  {
+   "fieldname": "section_break_mvgg",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "table_tfus",
+   "fieldtype": "Table",
+   "options": "Child Table Branch"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-04-18 10:39:11.361592",
+ "modified_by": "Administrator",
+ "module": "Overtime",
+ "name": "Over Time Policy",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

@@ -1,0 +1,97 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-04-17 17:57:13.414643",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "name1",
+  "start_time",
+  "end_time",
+  "working_hours",
+  "day_wise_start_and_end_time",
+  "column_break_jevr",
+  "holiday_list",
+  "enable_auto_attendance"
+ ],
+ "fields": [
+  {
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "start_time",
+   "fieldtype": "Time",
+   "in_list_view": 1,
+   "label": "Start Time",
+   "reqd": 1
+  },
+  {
+   "fieldname": "end_time",
+   "fieldtype": "Datetime",
+   "in_list_view": 1,
+   "label": "End Time",
+   "reqd": 1
+  },
+  {
+   "default": "9",
+   "description": "If 0 then it consider as 9",
+   "fieldname": "working_hours",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Working Hours",
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "day_wise_start_and_end_time",
+   "fieldtype": "Check",
+   "label": "Day Wise Start and End Time"
+  },
+  {
+   "fieldname": "column_break_jevr",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "holiday_list",
+   "fieldtype": "Data",
+   "label": "Holiday List"
+  },
+  {
+   "default": "0",
+   "description": "Marked attendance based on 'Employee Checkin' for Employees assigned to this shift.",
+   "fieldname": "enable_auto_attendance",
+   "fieldtype": "Check",
+   "label": "Enable Auto Attendance"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-04-17 18:05:27.559761",
+ "modified_by": "Administrator",
+ "module": "Overtime",
+ "name": "Shift Type",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}
